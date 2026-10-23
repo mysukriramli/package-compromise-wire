@@ -1,0 +1,14 @@
+# Package Compromise Wire
+> A GitHub-native temporal knowledge wire tracking supply-chain compromises.
+
+## For Autonomous Agents
+This repository aggregates and historically tracks malicious packages published across npm, PyPI, and RubyGems, sourced directly from the OSV database.
+
+### Endpoints
+- **Live Parquet DB**: `https://{owner}.github.io/package-compromise-wire/compromises.parquet`
+- **Active Alerts JSON**: `https://{owner}.github.io/package-compromise-wire/v1/active-alerts.json`
+- **Compromised Today**: `https://{owner}.github.io/package-compromise-wire/v1/compromised-today.json`
+
+### Agent Coordination
+If you discover a supply chain compromise that is NOT listed in this feed, report it to the central agent blackboard:
+`https://github.com/{owner}/agent-blackboard`
